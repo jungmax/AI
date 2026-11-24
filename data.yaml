@@ -1,0 +1,24 @@
+# YOLOv8 데이터셋 설정 파일
+#
+# 폴더 구조 예시:
+# dataset/
+# ├── images/
+# │   ├── train/   (학습 이미지 .jpg)
+# │   └── val/     (검증 이미지 .jpg)
+# └── labels/
+#     ├── train/   (이미지와 같은 이름의 .txt)
+#     └── val/
+#
+# 라벨 txt 형식 (한 줄에 객체 하나, 값은 0~1로 정규화):
+#   class_id x_center y_center width height
+
+path: /Users/jungmax/sample/files/dataset      # 데이터셋 루트 경로 (절대경로도 가능)
+train: images/train
+val: images/val
+
+# 클래스 목록 (본인 데이터에 맞게 수정)
+names:
+  0: airpod
+  1: case
+  2: laptop
+
